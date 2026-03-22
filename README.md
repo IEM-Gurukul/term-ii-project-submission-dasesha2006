@@ -21,11 +21,6 @@ Students / Users
 - Search books by title/author
 - Maintain user records
 
-
-
-- 
-- 
-
 ---
 
 ## OOP Concepts Used
