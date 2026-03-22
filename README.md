@@ -17,9 +17,12 @@ Students / Users
 ## Core Features
 
 - Add, update, and delete books
-Issue and return books
-Search books by title/author
-Maintain user records
+- Issue and return books
+- Search books by title/author
+- Maintain user records
+
+
+
 - 
 - 
 
