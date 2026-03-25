@@ -41,7 +41,6 @@ class Magazine extends LibraryItem {
     }
 }
 
-
 public class LibraryManagement {
     public static void main(String[] args) {
         Book b = new Book(1, "Java Basics", "John Doe");
