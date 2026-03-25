@@ -48,6 +48,6 @@ public class LibraryManagement {
         Magazine m = new Magazine(2, "Tech Monthly", 5);
 
         b.display();
-        m.display();
+       m.display();
     }
 }
