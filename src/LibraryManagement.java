@@ -13,3 +13,9 @@ class Student extends Person {
     public Student(String name, int id) {
         super(name, id);
     }
+    
+        @Override
+    void displayDetails() {
+        System.out.println("Student ID: " + id + ", Name: " + name);
+    }
+}
