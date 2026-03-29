@@ -7,7 +7,7 @@
 
 ## Problem Statement (max 150 words)
 
----Managing library records manually is time-consuming and prone to errors. The system needs an efficient way to handle book records, student details, and issue/return operations. This project aims to develop a Java-based Library Management System that automates book tracking, reduces paperwork, and improves efficiency. It will allow librarians to manage books, users to search for books, and maintain proper records of issued and returned books. The system ensures data consistency and quick access to information.
+Managing books manually in a library is time-consuming and error-prone. It becomes difficult to track which books are available, issued, or returned, and to maintain proper records of students borrowing books. This project aims to develop a simple Library Management System using Java that automates basic library operations. The system allows users to add books, view available books, issue books to students, and return them efficiently. It uses Object-Oriented Programming concepts such as abstraction, inheritance, and exception handling to ensure structured and error-free execution. The system is menu-driven and user-friendly, making it suitable for small libraries or academic purposes.
 
 ## Target User
 
@@ -16,32 +16,28 @@ Students / Users
 
 ## Core Features
 
-- Add, update, and delete books
-- Issue and return books
-- Search books by title/author
-- Maintain user records
+Add new books
+View all books
+Issue books to students
+Return books
+Store student details
+Track book issue status
+Handle invalid input using exception handling
+Menu-driven user interface
 
 ---
 
 ## OOP Concepts Used
 
-- Abstraction:
-- Inheritance:
-- Polymorphism:
-- Exception Handling:
-- Collections / Threads:
+- Abstraction
+- Inheritance
+- Exception Handling
 
 ---
 
 ## Proposed Architecture Description
 
----The system follows a layered architecture:
-
-Presentation Layer: Console-based UI
-Business Logic Layer: Handles operations like issue/return
-Data Layer: Stores data using collections (ArrayList)
-
-Classes include Book, User, Library, and Main class for execution.
+The system follows a simple object-oriented architecture. It consists of different classes such as Person (abstract class), Student (derived class), Book, and the main class LibraryManagement. The Person class defines common properties, while the Student class inherits from it to manage student details. The Book class stores information about each book and its issue status. The LibraryManagement class controls the overall flow of the program using a menu-driven approach. Data is stored using arrays, and user input is handled through the scanner. Exception handling is used to manage invalid inputs, ensuring smooth execution of the system.
 
 ## How to Run
 
