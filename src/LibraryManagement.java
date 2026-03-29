@@ -110,3 +110,68 @@ class Library {
         }
     }
 }
+public class LibraryManagement {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Library lib = new Library();
+
+        while (true) {
+            System.out.println("\n--- LIBRARY MENU ---");
+            System.out.println("1. Add Book");
+            System.out.println("2. Delete Book");
+            System.out.println("3. Search Book");
+            System.out.println("4. Issue Book");
+            System.out.println("5. Return Book");
+            System.out.println("6. Show Books");
+            System.out.println("7. Exit");
+
+            int choice = sc.nextInt();
+
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter Book ID: ");
+                    int id = sc.nextInt();
+                    sc.nextLine();
+                    System.out.print("Enter Title: ");
+                    String title = sc.nextLine();
+                    System.out.print("Enter Author: ");
+                    String author = sc.nextLine();
+
+                    lib.addBook(new Book(id, title, author));
+                    break;
+
+                case 2:
+                    System.out.print("Enter Book ID to delete: ");
+                    lib.deleteBook(sc.nextInt());
+                    break;
+
+                case 3:
+                    sc.nextLine();
+                    System.out.print("Enter Title/Author: ");
+                    lib.searchBook(sc.nextLine());
+                    break;
+
+                case 4:
+                    System.out.print("Enter Book ID to issue: ");
+                    lib.issueBook(sc.nextInt());
+                    break;
+
+                case 5:
+                    System.out.print("Enter Book ID to return: ");
+                    lib.returnBook(sc.nextInt());
+                    break;
+
+                case 6:
+                    lib.showBooks();
+                    break;
+
+                case 7:
+                    System.out.println("Exiting...");
+                    return;
+
+                default:
+                    System.out.println("Invalid choice!");
+            }
+        }
+    }
+}
