@@ -25,11 +25,9 @@ Students / Users
 
 ## OOP Concepts Used
 
-- Abstraction:
-- Inheritance:
-- Polymorphism:
-- Exception Handling:
-- Collections / Threads:
+- Abstraction
+- Inheritance
+- Exception Handling
 
 ---
 
